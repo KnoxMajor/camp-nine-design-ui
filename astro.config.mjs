@@ -8,24 +8,29 @@ export default defineConfig({
 	integrations: [
 		react(),
 		starlight({
-			title: 'Camp Nine Ui',
+			title: 'Camp Nine Design Ui',
 			social: {
 				// github: 'https://github.com/withastro/starlight',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Getting Started',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
+						{ label: 'What the heck is this', link: '/getting_started/introduction/' },
 					],
 				},
 				{
 					label: 'Components',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Clerk - 1 time code', link: '/components/clerk/one_time_code/' },
-					],
+						{
+							label: 'clerk.com',
+							items: [
+								// Each item here is one entry in the navigation menu.
+								{ label: '1 time code', link: '/components/clerk/one_time_code/' },
+							],
+						}
+					]
 				},
 				// {
 				// 	label: 'Reference',

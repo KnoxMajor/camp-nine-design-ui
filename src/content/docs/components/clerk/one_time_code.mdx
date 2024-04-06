@@ -3,5 +3,27 @@ title: One time Code
 ---
 
 import { OneTimeCode } from '../../../../components/clerk/one_time_code';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components';
+import txt from './h.js'
 
-<OneTimeCode client:load/>
+export const exampleCode = txt;
+export const fileName = 'example.js';
+export const highlights = ['file', 'CMS'];
+
+
+<div style={{minHeight: '400px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '10px'}}>
+  <div style={{}}>
+    <OneTimeCode client:load/>
+  </div>
+</div>
+
+
+<Tabs>
+  <TabItem label="Stars" icon="star">
+    <Code code={exampleCode} lang="js" title={fileName} />
+  </TabItem>
+  <TabItem label="Moons" icon="moon">
+    Stuff
+  </TabItem>
+</Tabs>

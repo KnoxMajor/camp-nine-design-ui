@@ -1,3 +1,5 @@
+export default `
+
 import React, { useState } from 'react';
 
 const OneTimeCode = () => {
@@ -33,7 +35,7 @@ const OneTimeCode = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div style={{ height: '224px', width: '264px', borderTopLeftRadius: '44px', borderTopRightRadius: '44px', backgroundColor: 'rgb(47, 48, 55)', backgroundImage: 'linear-gradient(#FFFFFF0D 0%, #FFFFFF00 67.19%)', position: 'relative', borderTopColor: '#d9d9de', borderTopWidth: '1px', boxShadow: 'rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.024) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.024) 0px 0px 0px 1px inset', transform: `translateX(25%) ${isHovered ? 'translateY(-10px)' : 'translateY(20px)'}`, transition: 'transform 0.2s ease-in-out', padding: '6px' }}>
+      <div style={{ height: '224px', width: '264px', borderTopLeftRadius: '44px', borderTopRightRadius: '44px', backgroundColor: 'rgb(47, 48, 55)', backgroundImage: 'linear-gradient(#FFFFFF0D 0%, #FFFFFF00 67.19%)', position: 'relative', borderTopColor: '#d9d9de', borderTopWidth: '1px', boxShadow: 'rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.024) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.024) 0px 0px 0px 1px inset', transform: \`translateX(25%) \${isHovered ? 'translateY(-10px)' : 'translateY(20px)'}\`, transition: 'transform 0.2s ease-in-out', padding: '6px' }}>
         <div style={{ paddingTop: '10px', paddingLeft: '20px', paddingRight: '20px', height: '220px', width: '252px', borderTopLeftRadius: '38px', borderTopRightRadius: '38px', backgroundColor: 'rgba(19, 19, 22, 0.5)', position: 'relative', borderTopColor: '#d9d9de', borderTopWidth: '1px', boxShadow: 'rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px', overflow: 'hidden' }}>
           {/* Notification */}
           <div style={{ padding: '8px', height: '56px', width: '236px', backgroundColor: 'rgb(47, 48, 55)', boxShadow: 'rgba(19, 19, 22, 0.6) 0px 6px 12px 0px, rgba(255, 255, 255, 0.03) 0px 1px 0px 0px inset', display: 'flex', columnGap: '12px', position: 'absolute', left: '8px', top: '45px', borderRadius: '16px', zIndex: '100', filter: isHovered ? 'blur(0px)' : 'blur(2px)', opacity: isHovered ? '1' : '.5', transform: isHovered ? 'matrix(1, 0, 0, 1, 0, 0)' : 'matrix(0.9, 0, 0, 0.9, 0, -104)', transformOrigin: '118px 0px', transition: 'transform 0.2s ease-in-out', alignItems: 'center' }}>
@@ -83,3 +85,6 @@ const OneTimeCode = () => {
 };
 
 export { OneTimeCode };
+
+
+`
