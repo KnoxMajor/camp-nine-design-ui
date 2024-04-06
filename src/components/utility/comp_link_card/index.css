@@ -1,0 +1,28 @@
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  border: 1px solid #5e5e5e;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-title {
+  margin-top: 0px !important;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #eceaea;
+  color: #232323;
+  font-weight: bold;
+  border-top: 1px solid #989898
+}

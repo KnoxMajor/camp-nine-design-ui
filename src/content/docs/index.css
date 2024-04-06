@@ -1,0 +1,12 @@
+.link-card-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .link-card-container {
+    flex-wrap: wrap; /* Allows items to wrap */
+    flex-direction: column; /* Stack items vertically */
+  }
+}

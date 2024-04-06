@@ -12,16 +12,32 @@ export const fileName = 'example.js';
 export const highlights = ['file', 'CMS'];
 
 
+<h3>Default (darkmode)</h3>
+
 <div style={{minHeight: '400px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '10px'}}>
-  <div style={{}}>
-    <OneTimeCode client:load/>
-  </div>
+  <OneTimeCode client:load/>
 </div>
 
 
 <Tabs>
   <TabItem label="Stars" icon="star">
     <Code code={exampleCode} lang="js" title={fileName} />
+  </TabItem>
+  <TabItem label="Moons" icon="moon">
+    Stuff
+  </TabItem>
+</Tabs>
+
+<h3>Light mode</h3>
+
+<div style={{minHeight: '400px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '10px'}}>
+  <OneTimeCode client:load darkmode={false}/>
+</div>
+
+
+<Tabs>
+  <TabItem label="Stars" icon="star">
+    <p>sd</p>
   </TabItem>
   <TabItem label="Moons" icon="moon">
     Stuff
