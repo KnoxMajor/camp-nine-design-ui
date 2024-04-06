@@ -5,8 +5,7 @@ template: splash
 hero:
   tagline: The best, gorgeous, free, copy and paste front end components.
   text: Built by Camp Nine Design
-  image:
-    file: ../../assets/houston.webp
+
   actions:
     - text: Go to Components
       link: /getting_started/introduction/
@@ -20,8 +19,6 @@ hero:
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import { CompLinkCard } from '../../components/utility/comp_link_card/index'
 import './index.css'
-
-<h2>Check out some of the components!</h2>
 
 <div class="link-card-container">
 	<CompLinkCard imageUrl={'/components/one_time_code.png'} title={'Clerk | One Time Code'} linkUrl={'/components/clerk/one_time_code/'} />
