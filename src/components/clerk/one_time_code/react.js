@@ -1,6 +1,6 @@
 export default `
   import React, { useState } from 'react';
-  import './index.css'
+  import './one_time_code.css'
 
   const OneTimeCode = ({
     darkmode = true,

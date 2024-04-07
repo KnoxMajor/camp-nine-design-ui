@@ -11,32 +11,29 @@ import cssCode from '../../../../components/clerk/one_time_code/css.js'
 
 <h3>Default (darkmode)</h3>
 
-<div style={{minHeight: '400px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '10px'}}>
+<div style={{minHeight: '400px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '10px', flexDirection: 'column', gap: '50px', paddingTop: '50px', paddingBottom: '50px'}}>
   <OneTimeCode client:load/>
-</div>
-
-
-<Tabs>
-  <TabItem label="React" icon="react">
-    <Code code={reactCode} lang="js" title={'one_time_code.jsx'} />
-  </TabItem>
-  <TabItem label="Css" icon="css">
-    <Code code={cssCode} lang="css" title={'index.css'} />
-  </TabItem>
-</Tabs>
-
-<h3>Light mode</h3>
-
-<div style={{minHeight: '400px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '10px'}}>
   <OneTimeCode client:load darkmode={false}/>
 </div>
 
+<h4>Props</h4>
+
+| Prop                 | datatype | possible values         |
+|----------------------|---------|--------------------------|
+| darkmode             | Boolean | true \|\| false |
+| title                | String  |                          |
+| subtitle             | String  |                          |
+| notificationTitle    | String  |                          |
+| notificationSubTitle | String  | Keep under 32 chars      |
+| accentColor          | String  | Hex code                 |
+
+<h4>Code</h4>
 
 <Tabs>
-  <TabItem label="Stars" icon="star">
-    <p>sd</p>
+  <TabItem label="React" icon="seti:react">
+    <Code code={reactCode} lang="js" title={'one_time_code.jsx'} />
   </TabItem>
-  <TabItem label="Moons" icon="moon">
-    Stuff
+  <TabItem label="Css" icon="seti:css">
+    <Code code={cssCode} lang="css" title={'one_time_code.css'} />
   </TabItem>
 </Tabs>
