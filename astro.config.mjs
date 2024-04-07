@@ -17,7 +17,7 @@ export default defineConfig({
 					label: 'Getting Started',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'What is Camp Nine Design Ui', link: '/getting_started/introduction/' },
+						{ label: 'What is Camp Nine Design Ui', link: '/ui/getting_started/introduction/' },
 					],
 				},
 				{
@@ -27,7 +27,7 @@ export default defineConfig({
 							label: 'clerk.com',
 							items: [
 								// Each item here is one entry in the navigation menu.
-								{ label: '1 time code', link: '/components/clerk/one_time_code/' },
+								{ label: '1 time code', link: '/ui/components/clerk/one_time_code/' },
 							],
 						}
 					]
