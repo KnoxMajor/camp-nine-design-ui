@@ -33,7 +33,6 @@ const OneTimeCode = ({
 
   const backgroundColor = darkmode ? 'rgb(47, 48, 55)' : '#FFF';
   const textColor = darkmode ? '#9395A1' : '#212126';
-  const primaryColor = darkmode ? 'rgb(19, 19, 22)' : '#FFF';
 
   const backgroundGradient = darkmode
     ? 'linear-gradient(#FFFFFF0D 0%, #FFFFFF00 67.19%)'
@@ -93,7 +92,7 @@ const OneTimeCode = ({
       </div>
       <div className="otc_bottom_bg_gradient" style={{ backgroundImage: bottomGradient }}></div>
       <div className="otc_bottom_caption_wrap" style={{ backgroundImage: darkmode ? "linear-gradient(to top, #212126, transparent)" : 'linear-gradient(to top, #fff, transparent)', zIndex: '100' }}>
-        <p className="otc_bottom_title" style={{ color: textColor }}>{title}</p>
+        <p className="otc_bottom_title" style={{ color: darkmode ? '#fff' : '#212126' }}>{title}</p>
         <p className="otc_bottom_subtitle" style={{ color: textColor }}>{subtitle}</p>
       </div>
     </div>

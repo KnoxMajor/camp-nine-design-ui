@@ -2,14 +2,11 @@
 title: One time Code
 ---
 
-import { OneTimeCode } from '../../../../components/clerk/one_time_code';
+import { OneTimeCode } from '../../../../components/clerk/one_time_code/one_time_code.jsx';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import { Code } from '@astrojs/starlight/components';
-import txt from './h.js'
-
-export const exampleCode = txt;
-export const fileName = 'example.js';
-export const highlights = ['file', 'CMS'];
+import reactCode from '../../../../components/clerk/one_time_code/react.js'
+import cssCode from '../../../../components/clerk/one_time_code/css.js'
 
 
 <h3>Default (darkmode)</h3>
@@ -20,11 +17,11 @@ export const highlights = ['file', 'CMS'];
 
 
 <Tabs>
-  <TabItem label="Stars" icon="star">
-    <Code code={exampleCode} lang="js" title={fileName} />
+  <TabItem label="React" icon="react">
+    <Code code={reactCode} lang="js" title={'one_time_code.jsx'} />
   </TabItem>
-  <TabItem label="Moons" icon="moon">
-    Stuff
+  <TabItem label="Css" icon="css">
+    <Code code={cssCode} lang="css" title={'index.css'} />
   </TabItem>
 </Tabs>
 
