@@ -17,7 +17,7 @@ export default defineConfig({
 					label: 'Getting Started',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'What is C9D.ui', link: '/getting_started/introduction/' },
+						{ label: 'What is Camp Nine Design Ui', link: '/getting_started/introduction/' },
 					],
 				},
 				{
