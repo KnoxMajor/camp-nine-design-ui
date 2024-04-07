@@ -1,0 +1,193 @@
+/* Container */
+.one_time_code {
+  width: 400px;
+  height: 260px;
+  border-radius: 16px;
+  position: relative;
+  border-top-color: #d9d9de;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.024) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.024) 0px 0px 0px 1px inset;
+}
+
+/* Inner container */
+.otc_inner_container {
+  height: 224px;
+  width: 264px;
+  border-top-left-radius: 44px;
+  border-top-right-radius: 44px;
+  position: relative;
+  border-top-color: #d9d9de;
+  border-top-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.024) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.024) 0px 0px 0px 1px inset;
+  transition: transform 0.2s ease-in-out;
+  padding: 6px;
+}
+
+.otc_outer_wrapper {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 220px;
+  width: 252px;
+  border-top-left-radius: 38px;
+  border-top-right-radius: 38px;
+  background-color: rgba(19, 19, 22, 0.5);
+  position: relative;
+  border-top-color: #d9d9de;
+  border-top-width: 1px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  overflow: hidden
+}
+
+/* Notification wrapper */
+.otc_notification_wrapper {
+  padding: 8px;
+  height: 56px;
+  width: 236px;
+  box-shadow: rgba(19, 19, 22, 0.6) 0px 6px 12px 0px, rgba(255, 255, 255, 0.03) 0px 1px 0px 0px inset;
+  display: flex;
+  column-gap: 12px;
+  position: absolute;
+  left: 8px;
+  top: 45px;
+  border-radius: 16px;
+  z-index: 100;
+  /* Transition and filter properties for hover state */
+  transform-origin: 118px 0px;
+  transition: transform 0.2s ease-in-out;
+  align-items: center;
+}
+
+/* Notification icon container */
+.otc_notification_icon {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(66, 67, 77);
+  background-image: radial-gradient(circle at center top, rgba(114, 233, 255, 0.2), rgba(114, 233, 255, 0));
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset;
+}
+
+.otc_notification_title {
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 0px !important
+}
+
+.otc_notification_subtitle {
+  font-size: 11px;
+  line-height: 16px;
+  margin: 0px !important
+}
+
+.otc_top_lock_icon {
+  margin: 0px auto !important;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99999px;
+  border-bottom-color: rgb(217, 217, 222);
+  transition: transform 0.2s ease-in-out
+}
+
+/* App icon container */
+.otc_app_icon_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 8px;
+  row-gap: 16px;
+  margin-top: 24px !important;
+}
+
+.otc_app_icon {
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset;
+  height: 40px;
+  width: 40px;
+  margin: 0px !important;
+}
+
+.otc_notif_num {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  color: rgb(19, 19, 22);
+  backdrop-filter: blur(8px);
+  border-radius: 1000px;
+  transition: 0.2s ease-in-out
+}
+
+.otc_app_icon {
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset;
+  height: 40px;
+  width: 40px;
+  margin: 0px !important
+}
+
+.otc_app_title {
+  margin-top: 10px !important;
+  line-height: 8px;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(183, 184, 194);
+  font-weight: bold
+}
+
+.otc_empty_app_icon {
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset;
+  height: 40px;
+  width: 40px;
+  margin: 0px !important;
+}
+
+.otc_bottom_bg_gradient {
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  margin-top: 0px !important;
+  border-radius: 16px;
+}
+
+.otc_bottom_caption_wrap {
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding: 24px;
+  padding-top: 0px;
+}
+
+.otc_bottom_title{
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.otc_bottom_subtitle{
+  margin-top: 8px !important;
+  line-height: 20px;
+  font-size: 13px
+}
+
+/* Bottom gradient overlay */
+.bottom-gradient {
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  border-radius: 16px;
+}
