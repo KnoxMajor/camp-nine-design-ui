@@ -1,13 +1,15 @@
 export default `
-
 /* Container */
 .one_time_code {
-  width: 400px;
+  width: 100%;
+  min-width: 280px;
   height: 260px;
   border-radius: 16px;
   position: relative;
   border-top-color: #d9d9de;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.024) 0px 1px 0px 0px inset, rgba(255, 255, 255, 0.024) 0px 0px 0px 1px inset;
+  display: flex;
+  justify-content: center;
 }
 
 /* Inner container */
@@ -28,8 +30,8 @@ export default `
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  height: 220px;
-  width: 252px;
+  height: calc(100% + 6px);
+  width: 100%;
   border-top-left-radius: 38px;
   border-top-right-radius: 38px;
   background-color: rgba(19, 19, 22, 0.5);
@@ -63,7 +65,6 @@ export default `
 .otc_notification_icon {
   height: 40px;
   width: 40px;
-  background-color: rgb(66, 67, 77);
   background-image: radial-gradient(circle at center top, rgba(114, 233, 255, 0.2), rgba(114, 233, 255, 0));
   border-radius: 10px;
   box-shadow: rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset;
@@ -155,7 +156,7 @@ export default `
 }
 
 .otc_bottom_bg_gradient {
-  width: 400px;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
@@ -187,12 +188,11 @@ export default `
 
 /* Bottom gradient overlay */
 .bottom-gradient {
-  width: 400px;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
   border-radius: 16px;
 }
-
 
 `

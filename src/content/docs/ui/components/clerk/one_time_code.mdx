@@ -11,13 +11,11 @@ import cssCode from '../../../../../components/clerk/one_time_code/css.js'
 
 <h3>Default (darkmode)</h3>
 
-<div style={{minHeight: '400px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '10px', flexDirection: 'column', gap: '50px', paddingTop: '50px', paddingBottom: '50px'}}>
-  <OneTimeCode client:load/>
-  <OneTimeCode client:load darkmode={false}/>
-</div>
-
-<div style={{minHeight: '400px', width: '80%', borderRadius: '10px',paddingTop: '50px', paddingBottom: '50px'}}>
-  <OneTimeCode client:load/>
+<div style={{width: '400px', margin: '0px auto'}}>
+  <div style={{minHeight: '400px', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '10px', flexDirection: 'column', gap: '50px', paddingTop: '50px', paddingBottom: '50px'}}>
+    <OneTimeCode client:load/>
+    <OneTimeCode client:load darkmode={false}/>
+  </div>
 </div>
 
 <h4>Props</h4>
@@ -32,7 +30,8 @@ import cssCode from '../../../../../components/clerk/one_time_code/css.js'
 | accentColor          | String  | Hex code                 |
 
 <h4>Notes</h4>
-You may have to edit the font styling as well as padding and margin due to your sites existing stylesheets.
+1. Width is 100% of its container, so if you want it smaller either add a container or simply adjust the stylesheet.
+2. You may have to edit the font styling as well as padding and margin due to your sites existing stylesheets.
 
 <h4>Code</h4>
 
