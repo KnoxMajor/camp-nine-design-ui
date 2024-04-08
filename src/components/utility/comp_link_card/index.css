@@ -1,6 +1,7 @@
 .card-link {
   text-decoration: none;
   color: inherit;
+  max-width: 346px;
 }
 
 .card {
