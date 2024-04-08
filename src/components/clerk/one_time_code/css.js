@@ -186,13 +186,4 @@ export default `
   font-size: 13px
 }
 
-/* Bottom gradient overlay */
-.bottom-gradient {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  border-radius: 16px;
-}
-
 `
