@@ -50,7 +50,7 @@ const OneTimeCode = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="otc_inner_container" style={{ backgroundColor: backgroundColor, backgroundImage: backgroundGradient, transform: `translateX(25%) ${isHovered ? 'translateY(-10px)' : 'translateY(20px)'}` }}>
+      <div className="otc_inner_container" style={{ backgroundColor: backgroundColor, backgroundImage: backgroundGradient, transform: isHovered ? 'translateY(-10px)' : 'translateY(20px)' }}>
         <div className="otc_outer_wrapper">
           {/* Notification */}
           <div className="otc_notification_wrapper" style={{ backgroundColor: backgroundColor, filter: isHovered ? 'blur(0px)' : 'blur(2px)', opacity: isHovered ? '1' : '.5', transform: isHovered ? 'matrix(1, 0, 0, 1, 0, 0)' : 'matrix(0.9, 0, 0, 0.9, 0, -104)' }}>

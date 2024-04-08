@@ -16,16 +16,23 @@ import cssCode from '../../../../../components/clerk/one_time_code/css.js'
   <OneTimeCode client:load darkmode={false}/>
 </div>
 
+<div style={{minHeight: '400px', width: '80%', borderRadius: '10px',paddingTop: '50px', paddingBottom: '50px'}}>
+  <OneTimeCode client:load/>
+</div>
+
 <h4>Props</h4>
 
 | Prop                 | Datatype | Possible Values         |
 |----------------------|---------|--------------------------|
-| darkmode             | Boolean | true \|\| false |
+| darkmode             | Boolean | true \|\| false          |
 | title                | String  |                          |
 | subtitle             | String  |                          |
 | notificationTitle    | String  |                          |
 | notificationSubTitle | String  | Keep under 32 chars      |
 | accentColor          | String  | Hex code                 |
+
+<h4>Notes</h4>
+You may have to edit the font styling as well as padding and margin due to your sites existing stylesheets.
 
 <h4>Code</h4>
 

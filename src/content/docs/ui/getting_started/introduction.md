@@ -26,7 +26,7 @@ Lastly, if:
 email me at: knox@campninedesign.com
 
 #### Copy, paste-able, and dependency free:
-I will try to keep every component as free of dependencies as possible making having them work for as many scenarios as possible.
+I will try to keep every component as free of dependencies as possible making them work for as many scenarios as possible.
 Because I hate dependencies and I will continue to reinvent the wheel just so I don't have to install one myself.
 
 ---
