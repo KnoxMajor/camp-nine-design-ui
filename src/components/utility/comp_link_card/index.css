@@ -10,11 +10,12 @@
   display: block;
   text-align: center;
   border: 1px solid #5e5e5e;
+  height: 100%;
 }
 
 .card-image {
   width: 100%;
-  height: auto;
+  height: 220px !important;
   display: block;
 }
 
@@ -22,8 +23,7 @@
   margin-top: 0px !important;
   padding: 8px;
   font-size: 16px;
-  background-color: #eceaea;
-  color: #232323;
+  background-color: #5e5e5e;
+  color: #fff;
   font-weight: bold;
-  border-top: 1px solid #989898
 }
