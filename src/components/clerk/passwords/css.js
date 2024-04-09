@@ -118,7 +118,6 @@ export default `
 }
 
 .pass_password_dot {
-  background-color: rgb(0, 174, 227);
   border-radius: 99999px;
   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.4) 0px 1px 2px 0px;
   height: 4px;
@@ -176,5 +175,4 @@ export default `
   line-height: 20px;
   font-size: 13px
 }
-
 `
