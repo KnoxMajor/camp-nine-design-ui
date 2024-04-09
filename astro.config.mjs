@@ -18,6 +18,7 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'What is Camp Nine Design Ui', link: '/getting_started/introduction/' },
+						{ label: 'Contact', link: '/getting_started/contact/' },
 					],
 				},
 				{
