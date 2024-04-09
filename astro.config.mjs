@@ -28,6 +28,7 @@ export default defineConfig({
 							items: [
 								// Each item here is one entry in the navigation menu.
 								{ label: '1 time code', link: '/components/clerk/one_time_code/' },
+								{ label: 'Passwords', link: '/components/clerk/passwords/' },
 							],
 						}
 					]
