@@ -1,7 +1,6 @@
 export default `
-/* Container */
 .passwords {
-  width: 100%;
+  width: 400px;
   min-width: 280px;
   height: 260px;
   border-radius: 16px;
