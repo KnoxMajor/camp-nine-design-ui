@@ -1,6 +1,7 @@
 .link-card-container {
   display: flex;
   gap: 20px;
+  align-content: center;
 }
 
 /* Media query for mobile devices */
