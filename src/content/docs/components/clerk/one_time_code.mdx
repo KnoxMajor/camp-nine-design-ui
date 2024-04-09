@@ -7,11 +7,11 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import { Code } from '@astrojs/starlight/components';
 import reactCode from '../../../../components/clerk/one_time_code/react.js'
 import cssCode from '../../../../components/clerk/one_time_code/css.js'
-
+import './comps.css'
 
 <h3>Default (darkmode)</h3>
 
-<div style={{width: '400px', margin: '50px auto', display: 'flex', flexDirection: 'column', gap: '20px'}}>
+<div class="comp_card">
   <OneTimeCode client:load/>
   <OneTimeCode client:load darkmode={false}/>
 </div>

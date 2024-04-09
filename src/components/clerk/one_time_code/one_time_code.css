@@ -11,6 +11,12 @@
   justify-content: center;
 }
 
+@media only screen and (max-width: 480px) {
+    .one_time_code {
+      width: 100%;
+    }
+}
+
 /* Inner container */
 .otc_inner_container {
   height: 224px;
