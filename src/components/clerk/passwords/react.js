@@ -42,9 +42,8 @@ const Passwords = ({
           </div>
           <div class="pass_passcode_outer" style={{ transform: isHovered ? 'translateY(1rem)' : 'translateY(0rem)' }}>
             <div class="pass_passcode_wrap" style={{ border: isHovered ? \`1px solid \${accentColor}\` : '', boxShadow: isHovered ? 'rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(58, 212, 253, 0.1) 0px 0px 6px 3px' : '' }}>
-              {/* Empty App Icons */}
               {Array.from({ length: 10 }, (_, index) => index).map((icon, i) =>
-                <div className={\`pass_password_dot \${startDots ? 'pass_password_dot_in' : 'pass_password_dot_out'}\`} style={{ transitionDelay: startDots ? \`${i}00ms\` : '0ms', backgroundColor: accentColor }}></div>
+                <div className={\`pass_password_dot \${startDots ? 'pass_password_dot_in' : 'pass_password_dot_out'}\`} style={{ transitionDelay: startDots ? \`\${i}00ms\` : '0ms', backgroundColor: accentColor }}></div>
               )}
             </div>
           </div>
