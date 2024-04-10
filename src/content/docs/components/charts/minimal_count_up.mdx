@@ -1,0 +1,39 @@
+---
+title: Minimal Count Up
+---
+
+import { MinimalCountUp } from '../../../../components/charts/minimal_count_up/minimal_count_up.jsx';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components';
+import reactCode from '../../../../components/charts/minimal_count_up/react.js'
+import cssCode from '../../../../components/charts/minimal_count_up/css.js'
+import '../comps.css'
+
+<h3>Example</h3>
+
+<div class="comp_card">
+  <MinimalCountUp client:load/>
+</div>
+
+<h4>Props</h4>
+
+| Prop                 | Datatype       |
+|----------------------|----------------|
+| title                | String         |
+| number               | int > 0        |
+| limit                | int < number prop  |
+
+<h4>Notes</h4>
+1. Hard width and height, adjust to your needs
+2. You may have to edit the font styling, padding, and margin due to your sites existing stylesheets.
+
+<h4>Code</h4>
+
+<Tabs>
+  <TabItem label="React" icon="seti:react">
+    <Code code={reactCode} lang="js" title={'minimal_count_up.jsx'} />
+  </TabItem>
+  <TabItem label="Css" icon="seti:css">
+    <Code code={cssCode} lang="css" title={'minimal_count_up.css'} />
+  </TabItem>
+</Tabs>

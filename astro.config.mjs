@@ -33,7 +33,14 @@ export default defineConfig({
 								{ label: '1 time code', link: '/components/clerk/one_time_code/' },
 								{ label: 'Passwords', link: '/components/clerk/passwords/' },
 							],
-						}
+						},
+						{
+							label: 'charts',
+							items: [
+								// Each item here is one entry in the navigation menu.
+								{ label: 'Minimal Count Up', link: '/components/charts/minimal_count_up/' },
+							],
+						},
 					]
 				},
 				// {

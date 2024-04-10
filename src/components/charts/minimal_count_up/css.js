@@ -1,0 +1,71 @@
+export default `
+.mcu_wrap {
+  height: 240px;
+  width: 400px;
+  padding: 20px;
+  margin: 0px !important;
+  background-color: #DDDDDD;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 6px;
+  color: #515151;
+}
+
+.mcu_num {
+  margin: 0px !important;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 45px;
+}
+
+.mcu_title {
+  margin: 0px !important;
+  font-weight: bold;
+  font-weight: 100;
+  font-size: 30px;
+  padding-left: 4px;
+}
+
+.mcu_line_chart_wrap {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  margin: 0px !important;
+  width: 100%;
+}
+
+.mcu_line_chart {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.mcu_line {
+  margin: 0px !important;
+  background-color: #BBBBBB;
+  width: 1px;
+}
+
+.mcu_line_counted {
+  background-color: #515151;
+}
+
+.indicator{
+  background-color: red;
+  position: relative;
+  bottom: 0px;
+}
+
+.indicator::after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-color: red;
+  height: 5px;
+  width: 5px;
+  border-radius: 1000px;
+}
+`
