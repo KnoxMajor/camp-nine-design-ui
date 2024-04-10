@@ -10,7 +10,9 @@ export default defineConfig({
 		starlight({
 			title: 'Camp Nine Design Ui',
 			social: {
-				// github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/KnoxMajor',
+				linkedin: 'https://www.linkedin.com/in/knoxmajor/',
+				'x.com': 'https://x.com/Knoxmajor_',
 			},
 			sidebar: [
 				{
@@ -38,6 +40,26 @@ export default defineConfig({
 				// 	label: 'Reference',
 				// 	autogenerate: { directory: 'reference' },
 				// },
+			],
+			head: [
+				// Convert the Google Analytics gtag.js script
+				{
+					tag: 'script',
+					attrs: {
+						src: 'https://www.googletagmanager.com/gtag/js?id=G-YPB5R6KRWV',
+						async: true,
+					},
+				},
+				// Convert the Google Analytics configuration script
+				{
+					tag: 'script',
+					content: `
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+						gtag('config', 'G-YPB5R6KRWV');
+					`,
+				},
 			],
 		}),
 	],
