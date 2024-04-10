@@ -2,6 +2,7 @@
   display: flex;
   gap: 20px;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 /* Media query for mobile devices */

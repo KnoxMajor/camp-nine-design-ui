@@ -1,0 +1,41 @@
+---
+title: Custom Roles
+---
+
+import { CustomRoles } from '../../../../components/clerk/custom_roles/custom_roles.jsx';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components';
+import reactCode from '../../../../components/clerk/custom_roles/react.js'
+import cssCode from '../../../../components/clerk/custom_roles/css.js'
+
+
+<h3>Example</h3>
+
+<div style={{width: '400px', margin: '100px auto'}}>
+  <CustomRoles client:load/>
+</div>
+
+
+<h4>Props</h4>
+
+| Prop                 | Datatype | Possible Values          |
+|----------------------|----------|--------------------------|
+| darkmode             | Boolean  | true || false            |
+| title                | String   |                          |
+| subtitle             | String   |                          |
+| titles               | String   |                          |
+
+<h4>Notes</h4>
+1. Hard set width and height, adjust as needed
+2. You may have to edit the font styling, padding, and margin due to your sites existing stylesheets.
+
+<h4>Code</h4>
+
+<Tabs>
+  <TabItem label="React" icon="seti:react">
+    <Code code={reactCode} lang="js" title={'custom_roles.jsx'} />
+  </TabItem>
+  <TabItem label="Css" icon="seti:css">
+    <Code code={cssCode} lang="css" title={'custom_roles.css'} />
+  </TabItem>
+</Tabs>

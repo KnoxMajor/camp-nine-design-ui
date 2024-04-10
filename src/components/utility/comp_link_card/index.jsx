@@ -7,9 +7,7 @@ const CompLinkCard = ({ imageUrl, title, linkUrl }) => {
     // Use the `href` attribute to define the link destination
     <a href={linkUrl} className="card-link" rel="noopener noreferrer">
       <div className="card">
-        {/* Image on top */}
-        <img src={imageUrl} alt={title} className="card-image" />
-        {/* Title at the bottom */}
+        <div style={{backgroundImage: `url(${imageUrl})`}} alt={title} className="card-image"></div>
         <div className="card-title">{title}</div>
       </div>
     </a>

@@ -27,15 +27,21 @@ export default defineConfig({
 					label: 'Components',
 					items: [
 						{
-							label: 'clerk.com',
+							label: 'Landing Pages',
 							items: [
-								// Each item here is one entry in the navigation menu.
-								{ label: '1 time code', link: '/components/clerk/one_time_code/' },
-								{ label: 'Passwords', link: '/components/clerk/passwords/' },
+								{
+									label: 'clerk.com',
+									items: [
+										// Each item here is one entry in the navigation menu.
+										{ label: '1 Time Code', link: '/components/clerk/one_time_code/' },
+										{ label: 'Passwords', link: '/components/clerk/passwords/' },
+										{ label: 'Custom Roles', link: '/components/clerk/custom_roles/' },
+									],
+								},
 							],
 						},
 						{
-							label: 'charts',
+							label: 'Charts',
 							items: [
 								// Each item here is one entry in the navigation menu.
 								{ label: 'Minimal Count Up', link: '/components/charts/minimal_count_up/' },
