@@ -3,8 +3,7 @@ title: Custom Roles
 ---
 
 import { CustomRoles } from '../../../../components/clerk/custom_roles/custom_roles.jsx';
-import { Tabs, TabItem } from '@astrojs/starlight/components';
-import { Code } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Code, Aside } from '@astrojs/starlight/components';
 import reactCode from '../../../../components/clerk/custom_roles/react.js'
 import cssCode from '../../../../components/clerk/custom_roles/css.js'
 
@@ -15,6 +14,9 @@ import cssCode from '../../../../components/clerk/custom_roles/css.js'
   <CustomRoles client:load/>
 </div>
 
+<Aside>
+  Photos MUST HAVE white backgrounds for the colorful background to appear behind them
+</Aside>
 
 <h4>Props</h4>
 
