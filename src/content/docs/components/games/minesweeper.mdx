@@ -1,0 +1,30 @@
+---
+title: Minesweeper
+---
+
+import { Minesweeper } from '../../../../components/games/minesweeper/minesweeper.jsx';
+import { Tabs, TabItem, Code, Aside } from '@astrojs/starlight/components';
+import reactCode from '../../../../components/games/minesweeper/react.js'
+import cssCode from '../../../../components/games/minesweeper/css.js'
+
+
+<h3>Example</h3>
+
+<div style={{width: '400px', margin: '100px auto'}}>
+  <Minesweeper client:load/>
+</div>
+
+<h4>Notes</h4>
+1. Hard set width and height, adjust as needed
+2. You may have to edit the font styling, padding, and margin due to your sites existing stylesheets.
+
+<h4>Code</h4>
+
+<Tabs>
+  <TabItem label="React" icon="seti:react">
+    <Code code={reactCode} lang="js" title={'custom_roles.jsx'} />
+  </TabItem>
+  <TabItem label="Css" icon="seti:css">
+    <Code code={cssCode} lang="css" title={'custom_roles.css'} />
+  </TabItem>
+</Tabs>

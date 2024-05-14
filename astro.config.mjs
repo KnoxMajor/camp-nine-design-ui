@@ -47,6 +47,13 @@ export default defineConfig({
 								{ label: 'Minimal Count Up', link: '/components/charts/minimal_count_up/' },
 							],
 						},
+						{
+							label: 'Games',
+							items: [
+								// Each item here is one entry in the navigation menu.
+								{ label: 'Minesweeper', link: '/components/games/minesweeper/' },
+							],
+						},
 					]
 				},
 				// {
