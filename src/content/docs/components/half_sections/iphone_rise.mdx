@@ -1,0 +1,38 @@
+---
+title: Iphone Rise
+---
+
+import { IphoneRise } from '../../../../components/half_sections/iphone_rise/iphone_rise.jsx';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components';
+import reactCode from '../../../../components/half_sections/iphone_rise/react.js'
+import cssCode from '../../../../components/half_sections/iphone_rise/css.js'
+import '../comps.css'
+
+<div class="comp_card">
+  <IphoneRise client:load />
+</div>
+
+<h4>Good for a hero section like this:</h4>
+<img style='border-radius: 5px' src="/assets/iphone_rise/inspo.jpg" />
+
+
+<h4>Props</h4>
+
+| Prop                 | Datatype | Possible Values          |
+|----------------------|----------|--------------------------|
+| animate              | Bool     | true, false              |
+
+<h4>Notes</h4>
+1. You may have to edit the font styling, padding, and margin due to your sites existing stylesheets.
+
+<h4>Code</h4>
+
+<Tabs>
+  <TabItem label="React" icon="seti:react">
+    <Code code={reactCode} lang="js" title="iphone_rise.jsx" />
+  </TabItem>
+  <TabItem label="Css" icon="seti:css">
+    <Code code={cssCode} lang="css" title="iphone_rise.css" />
+  </TabItem>
+</Tabs>

@@ -38,6 +38,13 @@ export default defineConfig({
 										{ label: 'Custom Roles', link: '/components/clerk/custom_roles/' },
 									],
 								},
+								{
+									label: 'Half Sections',
+									items: [
+										// Each item here is one entry in the navigation menu.
+										{ label: 'iPhone Rise', link: '/components/half_sections/iphone_rise/' },
+									],
+								},
 							],
 						},
 						{
