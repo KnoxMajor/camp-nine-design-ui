@@ -18,6 +18,19 @@ function convertToTitleCase(str) {
   return titleCaseString;
 }
 
+function convertToPageTitleCase(str) {
+  // Split the string into an array of words
+  const words = str.split('_');
+
+  // Capitalize the first letter of each word
+  const titleCaseWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+
+  // Join the words back into a single string
+  const titleCaseString = titleCaseWords.join(' ');
+
+  return titleCaseString;
+}
+
 function generateComponent(name, label) {
   const componentDir = `src/components/${label}/${name}`
   const docsDir = `src/content/docs/components/${label}`
@@ -37,7 +50,7 @@ function generateComponent(name, label) {
 
 function generateComponentMDX(name, label, docsDir) {
   const mdxContent = `---
-title: ${name}
+title: ${convertToPageTitleCase(name)}
 ---
 
 import { ${convertToTitleCase(name)} } from '../../../../components/${label}/${name}/${name}.jsx';
